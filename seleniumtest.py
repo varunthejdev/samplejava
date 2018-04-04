@@ -6,7 +6,7 @@ display = Display(visible=0, size=(800, 600))
 display.start()
 
 browser = webdriver.Firefox()
-browser.get('http://192.168.33.21:8080/dev/')
+browser.get('http://192.168.33.30:8080/dev/')
 print browser.title
 var1 = browser.title
 print var1
