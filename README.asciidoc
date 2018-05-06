@@ -22,3 +22,15 @@ This is a trivial Java EE 7 sample.
 .. `mvn versions:set -DnewVersion=2.0`
 .. `mvn deploy -P release`
 
+# Jenkins Commands
+
+mvn sonar:sonar
+
+mvn install
+
+mvn deploy
+
+# Using tomcat api to deploy application on tomcat 7
+
+curl --upload-file target/javaee7-simple-sample.war "http://admin:admin@192.168.33.30:8080/manager/text/deploy?path=/dev"
+
